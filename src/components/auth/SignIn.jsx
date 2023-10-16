@@ -18,14 +18,19 @@ const SignIn = () => {
   return (
     <div className='sign-in-container'>
       <form onSubmit={signIn}>
-        <h1>Log In</h1>
-        <input type="email" placeholder="Enter your email" value={email} onChange={(e) => setEmail(e.target.value)}></input>
-        <input type="password" placeholder='Enter your Password' value={password} onChange={(e) => setPassword(e.target.value)}></input>
-
-        <button type="submit">Log In</button>
+        <h1 className="heading">Sign In</h1>
+        <input type="email" placeholder="Enter your email" value={email} onChange={(e) => setEmail(e.target.value)}></input>{ " " }
+        <br/>
+        <input type="password" placeholder='Enter your Password' value={password} onChange={(e) => setPassword(e.target.value)}></input>{ " " }<br/>
+        <br/>
+        <div className="link">
+          <button type="submit" className="login">Log In</button>
+        </div>
+        <br/>
+        <br/>
       </form>
     </div>
   )
-}
+};
 
-export default SignIn
+export default SignIn;
